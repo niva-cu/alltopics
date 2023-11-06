@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.nivs.all.navigation_data_share.fragment_fragment_navgraph.ExamFragment"
+        android:label="Note List"
+        tools:layout="@layout/fragment_exam">
+        <action
+            android:id="@+id/action_mobile_navigation_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.nivs.all.navigation_data_share.fragment_fragment_navgraph.ScoreFragment"
+        android:label="Add Note"
+        tools:layout="@layout/fragment_score" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+
+</navigation>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_exam"
+    app:startDestination="@id/fraNavDataActivity">
+
+    <activity
+        android:id="@+id/fraNavDataActivity"
+        android:name="com.nivs.all.navigation_data_share.fragment_fragment_navgraph.FragFragDataNavGraphActivity"
+        android:label="data_navigation"
+        tools:layout="@layout/activity_fragfrag_navdata"/>
+    <fragment
+        android:id="@+id/examFragment"
+        android:name="com.nivs.all.navigation_data_share.fragment_fragment_navgraph.ExamFragment"
+        android:label="fragment_exam"
+        tools:layout="@layout/fragment_exam">
+        <action
+            android:id="@+id/action_examFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.nivs.all.navigation_data_share.fragment_fragment_navgraph.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" >
+        <argument
+            android:name="ExamItem"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        &lt;!&ndash;<argument
+            android:name="exams"
+            app:argType="com.nivs.all.navigation_data_share.fragment_fragment_navgraph.Exam" />&ndash;&gt;
+    </fragment>
+</navigation>-->

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation_data_share.activity_fragment.using_viewmodel.ActFragVMActivity">
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_200"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editTextFra" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextFra"
+        android:layout_width="match_parent"
+        android:text="First Fragment"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonOne"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOne"
+        android:layout_width="match_parent"
+        android:text="First Fragment"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonTwo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonTwo"
+        android:layout_width="match_parent"
+        android:text="Second Fragment"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ask Runtime Permission"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvLaunchActivity"/>
+
+    <TextView
+        android:id="@+id/tvLaunchActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Diff acttivity mode"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvPermission"/>
+
+
+    <TextView
+        android:id="@+id/tvCoroutine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvCoroutine1"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPermission"
+        app:layout_constraintLeft_toRightOf="@+id/tvCoroutine2"/>
+
+    <TextView
+        android:id="@+id/tvCoroutine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvCoroutine2"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaunchActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvCoroutine1"/>
+
+    <TextView
+        android:id="@+id/tvDataBindin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvDataBindin1"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCoroutine1"
+        app:layout_constraintLeft_toRightOf="@+id/tvDataBindin2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDataBindin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvDataBindin2way"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCoroutine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvDataBindin1"/>
+
+    <TextView
+        android:id="@+id/tvDI1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvDI1"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDataBindin1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvDI2"/>
+
+    <TextView
+        android:id="@+id/tvDI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvDI2"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDataBindin2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvDI1"/>
+
+    <TextView
+        android:id="@+id/tvLiveData1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvLiveData1"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDI1"
+        app:layout_constraintRight_toLeftOf="@+id/tvLiveData2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLiveData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvLiveData2"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDI2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvLiveData1"/>
+
+    <TextView
+        android:id="@+id/tvViewModel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvViewModel1"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLiveData1"
+        app:layout_constraintLeft_toRightOf="@id/tvViewModel2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvViewModel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvViewModel2"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLiveData2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvViewModel1"/>
+
+    <TextView
+        android:id="@+id/tvRetrofit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RetrofitGlideRecycler"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvViewModel1"
+        app:layout_constraintLeft_toRightOf="@+id/tvRetrofit2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvRetrofit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvRetrofit2"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvViewModel2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvRetrofit1"/>
+
+
+    <TextView
+        android:id="@+id/tvRoom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvRoom1"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRetrofit1"
+        app:layout_constraintLeft_toRightOf="@+id/tvRoom2"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tvRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvRoom2"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRetrofit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvRoom1"/>
+    <TextView
+        android:id="@+id/tvRoom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room CRUD ilt Retrofit Recycler"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRoom1"
+        app:layout_constraintLeft_toRightOf="@+id/tvRoom4"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvRoom4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API>Room>Activity"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRoom2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvRoom3"/>
+
+    <TextView
+        android:id="@+id/tvLatLon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latLon"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRoom3"
+        app:layout_constraintLeft_toRightOf="@+id/tvLatLon2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLatLon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latLong Background Service"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRoom3"
+        app:layout_constraintLeft_toRightOf="@+id/tvLatLon1"
+        app:layout_constraintRight_toLeftOf="@+id/tvLatLon3"/>
+
+    <TextView
+        android:id="@+id/tvLatLon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="current pos in map"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRoom4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvLatLon2"/>
+
+    <TextView
+        android:id="@+id/tvStartService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startService"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLatLon1"
+        app:layout_constraintLeft_toRightOf="@+id/tvStartService1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvStartService1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BindService"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLatLon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvStartService"/>
+
+    <TextView
+        android:id="@+id/tvStartService2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audioplayer playPause"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvStartService"
+        app:layout_constraintLeft_toRightOf="@+id/tvSCEB"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvSCEB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS CALL EMAIL Battery"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvStartService1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvStartService2"/>
+
+    <TextView
+        android:id="@+id/tvBR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WiFi on off using BR"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvStartService2"
+        app:layout_constraintLeft_toRightOf="@+id/tvBR2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvBR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WiFi connectivity using BR"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSCEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvBR1"/>
+
+    <TextView
+        android:id="@+id/tvBR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BR Notification"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBR1"
+        app:layout_constraintLeft_toRightOf="@id/tvBR4"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvBR4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive Notification"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBR2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvBR3"/>
+
+
+
+    <TextView
+        android:id="@+id/tvCamX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CameraX"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBR3"
+        app:layout_constraintLeft_toRightOf="@+id/tvCamX2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCamX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CameraX"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBR4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvCamX1"/>
+
+    <TextView
+        android:id="@+id/tvContent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content Provider"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCamX1"
+        app:layout_constraintLeft_toRightOf="@+id/tvShared1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvShared1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCamX2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvContent1"/>
+
+    <TextView
+        android:id="@+id/tvAlert1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialogs"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvContent1"
+        app:layout_constraintLeft_toRightOf="@+id/tvDialogs1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDialogs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialog Fragment"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvShared1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvAlert1"/>
+
+    <TextView
+        android:id="@+id/tvNavDrawer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Nav Drawer"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAlert1"
+        app:layout_constraintLeft_toRightOf="@+id/tvNavDrawer2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNavDrawer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Nav Drawer"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAlert1"
+        app:layout_constraintLeft_toRightOf="@+id/tvNavDrawer1"
+        app:layout_constraintRight_toLeftOf="@+id/tvNavDrawer3"/>
+
+    <TextView
+        android:id="@+id/tvNavDrawer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right Nav Drawer"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogs1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvNavDrawer2"/>
+
+    <TextView
+        android:id="@+id/tvViewPager1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewPager Layout"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNavDrawer1"
+        app:layout_constraintLeft_toRightOf="@+id/tvViewPager2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvViewPager2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewPager Layout with Tab"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNavDrawer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvViewPager1"/>
+
+    <TextView
+        android:id="@+id/tvNavActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acti Acti data share"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvViewPager1"
+        app:layout_constraintLeft_toRightOf="@+id/tvNavFragment"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNavFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frag To Frag"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvViewPager1"
+        app:layout_constraintLeft_toRightOf="@+id/tvNavActivity"
+        app:layout_constraintRight_toLeftOf="@+id/tvNavFragmentBundle"/>
+
+
+    <TextView
+        android:id="@+id/tvNavFragmentBundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frag Frag Bundle"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvViewPager2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvNavFragment"/>
+
+
+    <TextView
+        android:id="@+id/tvNavActivityFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Fragment data share"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNavActivity"
+        app:layout_constraintLeft_toRightOf="@+id/tvNavFragmentActivity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNavFragmentActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment Activity data share"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNavFragmentBundle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvNavActivityFragment"/>
+
+
+
+    <TextView
+        android:id="@+id/tvAbstract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abstraction"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNavActivityFragment"
+        app:layout_constraintLeft_toRightOf="@+id/tvInterface"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvInterface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interface"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNavActivityFragment"
+        app:layout_constraintLeft_toRightOf="@+id/tvAbstract"
+        app:layout_constraintRight_toLeftOf="@+id/tvConstructor"/>
+
+    <TextView
+        android:id="@+id/tvConstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Constructor"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNavFragmentActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvInterface"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

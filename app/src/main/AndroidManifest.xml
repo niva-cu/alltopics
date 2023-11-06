@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name = "android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".retrofit_room_glide_recycler.retroGlideRecycler.MovieAndroidApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AllTopics"
+        tools:targetApi="31">
+        <!--android:name=".retrofit_room_glide_recycler.retroGlideRecycler.MovieAndroidApp"-->
+        <!--android:name=".di_hilt_room_fromApi_ToActivity.DiApp"-->
+        <activity
+            android:name=".app_navigation.AllTopicsActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AllTopics.NoActionBar">
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".runtime_permission.PermissionAskActivity"
+            android:exported="true"
+            android:label="Ask Permission"/>
+        <activity
+            android:name=".data_binding.DataBindingActivity"
+            android:exported="true"
+            android:label="Data Bindin 1"/>
+        <activity
+            android:name=".data_binding_twoway.DataBindingTwowayActivity"
+            android:exported="true"
+            android:label="Data Bindin 2 way"/>
+        <activity
+            android:name=".di_hilt_offline.DiOfflineActivity"
+            android:exported="true"
+            android:label="Dependency 1"/>
+        <activity
+            android:name=".di_hilt_room.DIActivity"
+            android:exported="true"
+            android:label="Dependency Online RoomEntry"/>
+        <activity
+            android:name=".livedata.MainLiveDataActivity"
+            android:exported="true"
+            android:label="LiveData1"/>
+        <activity
+            android:name=".viewmodel_factory.MainVMFactoryActivity"
+            android:exported="true"
+            android:label="ViewModel2"/>
+        <activity
+            android:name=".viewmodeleg.MainViewModelActivity"
+            android:exported="true"
+            android:label="ViewModel1"/>
+        <activity
+        android:name=".db_room.MainDBActivity"
+        android:exported="true"
+        android:label="DB1 Insert and All"/>
+        <activity
+            android:name=".room_offline_crud_notes.RoomCRUDActivity"
+            android:exported="true"
+            android:label="DB2 CRUD"/>
+        <activity
+            android:name=".latlong.LatLongActivity"
+            android:exported="true"
+            android:label="Lat Long"/>
+        <!--<activity
+            android:name=".di_hilt_retrofit_glide_recyclerview.RetroGlideRecyclerActivity"
+            android:exported="true"
+            android:label="HiltGlideRecyclerRetro"/>-->
+        <activity
+            android:name=".startservice.StartServiceEg"
+            android:exported="true"
+            android:label="Start Service"/>
+
+        <activity
+            android:name=".br_wifi.BroadcastReceiverActivity"
+            android:exported="true"
+            android:label="WiFi state BR"/>
+
+        <activity
+            android:name=".br_connectivity_register.BroadcastReceiverRegisterActivity"
+            android:exported="true"
+            android:label="Connectivity Reister BR"/>
+        <activity
+            android:name=".br_notification.BroadcastNotificationActivity"
+            android:exported="true"
+            android:label="BR Notification"/>
+        <activity
+            android:name=".pus_notification.PusNotificationActivity"
+            android:exported="true"
+            android:label="Receive Notification"/>
+        <activity
+        android:name=".sms_call_email_battery.SmsCallEmailBluetoothActivity"
+        android:exported="true"
+        android:label="SMS CALL EMAIL Bluetoot"/>
+
+        <activity android:name=".camerax.MainCameraXActivity"
+            android:exported="true"
+            android:label="CameraX"/>
+        <activity android:name=".contentProvi_shardPref.MainContentProviderActivity"
+            android:exported="true"
+            android:label="Content Provider"/>
+        <activity android:name=".contentProvi_shardPref.MainShredPrefActivity"
+            android:exported="true"
+            android:label="Shared Prefs"/>
+        <activity android:name=".dialog_alert_fragment.AlertDialogActivityEg"
+            android:exported="true"
+            android:label="Alert Dialogs"/>
+        <activity android:name=".dialog_alert_fragment.DiffDialogActivity"
+            android:exported="true"
+            android:label="Different Dialogs"/>
+        <activity android:name=".navigation_LeftRightBottom.LeftNavDrawerActivity"
+            android:exported="true"
+            android:label="Left Navigation Drawer"/>
+        <activity android:name=".navigation_LeftRightBottom.RightNavDrawerActivity"
+            android:exported="true"
+            android:label="Right Navigation Drawer"/>
+        <activity android:name=".navigation_LeftRightBottom.BottomNavigationActivity"
+            android:exported="true"
+            android:label="Bottom Navigation Drawer"/>
+        <activity android:name=".viewpager_eg.MainViewPagerActivity"
+            android:exported="true"
+            android:label="View Pager"/>
+        <activity android:name=".navDrawer_viewPager.anoter_viewpaer.MainFragmentPagerActivity"
+            android:exported="true"
+            android:label="View Pager TabLayout"/>
+        <activity android:name=".di_hilt_room_fromApi_ToActivity.RoomActivity"
+                    android:exported="true"
+                    android:label="Retrofit Room Activity"/>
+        <activity android:name=".retrofit_room_glide_recycler.retroGlideRecycler.RetrofitGlideRecyclerActivity"
+            android:exported="true"
+            android:label="RetrofitGlideRecycler"/>
+        <activity android:name=".coroutine.coroutine1.MainCoroutineActivity"
+            android:exported="true"
+            android:label="Coroutine Eg"/>
+        <activity android:name=".navigation_data_share.fragment_fragment.FragFragActivity"
+            android:exported="true"
+            android:label="Fragment to Fragment data share"/>
+        <activity android:name=".navigation_data_share.fragment_fragment_bundle.FragFragBundleActivity"
+            android:exported="true"
+            android:label="Fragment to fragment data Bundle"/>
+        <activity android:name=".navigation_data_share.fragment_fragment_navgraph.FragFragDataNavGraphActivity"
+        android:exported="true"
+        android:label="Fragment to Fragment NavData send"/>
+        <activity android:name=".navigation_data_share.activity_fragment.using_viewmodel.ActFragVMActivity"
+            android:exported="true"
+            android:label="Activity to Fragment usin VM"/>
+        <activity android:name=".latlong.BackgroundLatLongActivity"
+            android:exported="true"
+            android:label="Background Location"/>
+
+        <service android:name=".startservice.MediaplayService"/>
+        <service android:name=".pus_notification.NotificationStartStopService"/>
+        <receiver android:name = ".br_notification.MyNotificationPublisher" />
+    </application>
+</manifest>
